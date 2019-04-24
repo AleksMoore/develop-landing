@@ -193,20 +193,17 @@ body{
 	    left: -8%;
 	    top: 35%;
 	    text-indent: -9999px;
+	    width: 17px;
+		height: 12px;
+		background: url(../images/icons/arrow-left.svg) top left no-repeat;
+
+		&:hover{
+			background: url(../images/icons/arrow-left-hover.svg) top left no-repeat;
+		}
 
 	    &:focus{
 	    	outline: none;
 	    }
-
-	    &:before {
-		    content: '';
-		    position: absolute;
-		    left: 0;
-		    top: 0;
-		    width: 17px;
-		    height: 12px;
-		    background: url(../images/icons/prev-arrow.svg) top left no-repeat;
-		}
 	}
 
 	.owl-carousel .owl-nav button.owl-next {
@@ -214,20 +211,17 @@ body{
 	    top: 35%;
 	    right: -8%;
 	    text-indent: -9999px;
+	    width: 17px;
+		height: 12px;
+		background: url(../images/icons/arrow-right.svg) top right no-repeat;
+
+		&:hover{
+			background: url(../images/icons/arrow-right-hover.svg) top left no-repeat;
+		}
 
 	    &:focus{
 	    	outline: none;
 	    }
-
-	    &:before {
-		    content: '';
-		    position: absolute;
-		    right: 0;
-		    top: 0;
-		    width: 17px;
-		    height: 12px;
-		    background: url(../images/icons/next-arrow.svg) top right no-repeat;
-		}
 	}
 }
 
@@ -278,7 +272,7 @@ body{
 .project{
 	width: 100%;
 	text-align: center;
-	padding: 0 0 86px;
+	padding: 0 0 70px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -331,7 +325,7 @@ body{
 
 .why{
 	width: 100%;
-	padding: 50px 0 33px;
+	padding: 70px 0 70px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -407,6 +401,7 @@ body{
 			border: 1px solid $orange;
 			background: $light-orange;
 			border-radius: 50%;
+			cursor: default;
 
 			&:hover{
 				background: -webkit-gradient(linear, left top, right top, from(#FFF0E5), color-stop(93.5%, #FFD7B9));
@@ -439,7 +434,7 @@ body{
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	padding: 87px 0;
+	padding: 70px 0;
 
 	h2{
 		color: $dark-grey;
@@ -524,6 +519,7 @@ body{
 			text-decoration: none;
 			-webkit-box-sizing: border-box;
 			        box-sizing: border-box;
+			cursor: default;
 
 			&:hover{
 
@@ -582,7 +578,7 @@ body{
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	padding: 67px 0 76px;
+	padding: 70px 0;
 	background: $back-grey;
 
 	h2{
@@ -633,6 +629,9 @@ body{
 
 		p{
 			margin: 0 0 12px;
+			color: $dark-grey;
+			text-decoration: none;
+			line-height: 20px;
 		}
 
 		a{
@@ -640,7 +639,8 @@ body{
 			text-decoration: none;
 			line-height: 20px;
 		}
-
+		
+		/*  Иконка для скачки документов */
 		.download{
 
 			position: relative;
@@ -662,20 +662,17 @@ body{
 	    left: -2%;
 	    top: 25%;
 	    text-indent: -9999px;
+	    width: 17px;
+		height: 12px;
+		background: url(../images/icons/arrow-left.svg) top left no-repeat;
+
+		&:hover{
+			background: url(../images/icons/arrow-left-hover.svg) top left no-repeat;
+		}
 
 	    &:focus{
 	    	outline: none;
 	    }
-
-	    &:before{
-		    content: '';
-		    position: absolute;
-		    left: 0;
-		    top: 0;
-		    width: 17px;
-		    height: 12px;
-		    background: url(../images/icons/prev-arrow.svg) top left no-repeat;
-		}
 	}
 
 	.owl-carousel .owl-nav button.owl-next {
@@ -683,20 +680,17 @@ body{
 	    top: 25%;
 	    right: 67%;
 	    text-indent: -9999px;
+	    width: 17px;
+		height: 12px;
+		background: url(../images/icons/arrow-right.svg) top right no-repeat;
+
+		&:hover{
+			background: url(../images/icons/arrow-right-hover.svg) top left no-repeat;
+		}
 
 	    &:focus{
 	    	outline: none;
 	    }
-
-	    &:before{
-		    content: '';
-		    position: absolute;
-		    right: 0;
-		    top: 0;
-		    width: 17px;
-		    height: 12px;
-		    background: url(../images/icons/next-arrow.svg) top right no-repeat;
-		}
 	}
 }
 
@@ -719,7 +713,7 @@ body{
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	padding: 49px 0 41px;
+	padding: 70px 0;
 
 	h2{
 		color: $dark-grey;
@@ -771,7 +765,7 @@ body{
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	padding: 46px 0 60px;
+	padding: 70px 0;
 	background: $back-grey;
 
 	&__wrapper{
@@ -789,11 +783,13 @@ body{
 				border-bottom: 3px solid $orange;
 			}
 		}
+		
+		/* Когда 3 таба то width: 21%; */
 
 		label{
 			display: inline-block;
 			margin: 0 -4px -1px 0;
-    		width: 21%;
+    		width: 37%;
 			padding: 15px 57px;
 			text-align: center;
 			color: $dark-grey;
@@ -896,7 +892,7 @@ body{
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	padding: 50px 0 70px;
+	padding: 70px 0;
 
 	h2{
 		color: $dark-grey;
@@ -953,6 +949,7 @@ body{
 		max-width: 67%;
 		color: $dark-grey;
 		font-size: $second-size;
+		line-height: 21px;
 	}
 
 	.owl-carousel .owl-nav button.owl-prev {
@@ -960,20 +957,17 @@ body{
 	    left: -8%;
 	    top: 25%;
 	    text-indent: -9999px;
+	    width: 17px;
+		height: 12px;
+		background: url(../images/icons/arrow-left.svg) top left no-repeat;
+
+		&:hover{
+			background: url(../images/icons/arrow-left-hover.svg) top left no-repeat;
+		}
 
 	    &:focus{
 	    	outline: none;
 	    }
-
-	    &:before {
-		    content: '';
-		    position: absolute;
-		    left: 0;
-		    top: 0;
-		    width: 17px;
-		    height: 12px;
-		    background: url(../images/icons/prev-arrow.svg) top left no-repeat;
-		}
 	}
 
 	.owl-carousel .owl-nav button.owl-next {
@@ -981,20 +975,17 @@ body{
 	    top: 25%;
 	    right: -8%;
 	    text-indent: -9999px;
+	    width: 17px;
+		height: 12px;
+		background: url(../images/icons/arrow-right.svg) top right no-repeat;
+
+		&:hover{
+			background: url(../images/icons/arrow-right-hover.svg) top left no-repeat;
+		}
 
 	    &:focus{
 	    	outline: none;
 	    }
-
-	    &:before {
-		    content: '';
-		    position: absolute;
-		    right: 0;
-		    top: 0;
-		    width: 17px;
-		    height: 12px;
-		    background: url(../images/icons/next-arrow.svg) top right no-repeat;
-		}
 	}
 }
 
@@ -1039,8 +1030,85 @@ body{
 			text-decoration: none;
 			color: $white;
 			font-size: $second-size;
+
+			&:hover{
+				text-decoration: underline;
+			}
 		}
 	}
 }
 
 /* End Footer */
+
+/* Popup */
+
+.popup{
+	display: none;
+	width: 100%;
+	max-width: 740px!important;
+	padding: 0!important;
+	border-radius: 10px;
+
+	&__title{
+		width: 100%;
+		height: 70px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		background: $light-orange;
+		font-size: $main-size;
+		color: $orange;
+		font-weight: 700;
+	}
+	
+	&__info{
+		width: 100%;
+		padding: 30px 60px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+
+		p{
+			font-size: $second-size;
+			color: $dark-grey;
+		}
+
+		a{
+			font-size: $second-size;
+			color: $orange;
+		}
+	}
+
+	&__left{
+		max-width: 48%;
+	}
+
+	&__right{
+		max-width: 48%;
+	}
+}
+
+/* Кнопка "закрыть" */
+.fancybox-slide--html .fancybox-close-small{
+	right: 10px!important;
+    top: 10px!important;
+}
+
+.fancybox-button svg{
+	color: $light-grey;
+}
+
+/* End Popup */
