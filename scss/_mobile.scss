@@ -145,6 +145,22 @@
 		&__wrapper{
 			padding: 0 15px;
 		}
+
+		.tab3__content{
+
+			.content__item{
+				width: 100%!important;
+				padding: 0!important;
+
+				&:first-child{
+					margin-bottom: 25px;
+				}
+
+				p{
+					line-height: 21px;
+				}
+			}
+		}
 	}
 
 	.reviews{
@@ -280,6 +296,13 @@
 
 		&__address{
 			margin-bottom: 24px;
+		}
+	}
+
+	.popup{
+
+		&__info{
+			padding: 30px 30px;
 		}
 	}
 }
@@ -444,14 +467,6 @@
 					        box-sizing: border-box;
 			}
 		}
-
-		.tab3__content{
-
-			.content__item{
-				width: 100%!important;
-				padding: 0!important;
-			}
-		}
 	}
 
 	.reviews{
@@ -462,6 +477,13 @@
 
 		.owl-carousel .owl-nav button.owl-next{
 			right: 5%;
+		}
+	}
+
+	.popup{
+
+		&__info{
+			padding: 15px 15px;
 		}
 	}
 }
