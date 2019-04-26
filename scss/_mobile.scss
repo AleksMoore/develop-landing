@@ -428,6 +428,13 @@
 
 	.tabs{
 
+		&__wrapper{
+
+			label{
+				padding: 15px 20px;
+			}
+		}
+
 		.tab2__content{
 
 			.content__item{
