@@ -32,7 +32,6 @@ $(function() {
         margin:0,
         nav: true,
         URLhashListener:true,
-        autoplayHoverPause:true,
         startPosition: 'one'
     });
 });
