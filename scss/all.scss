@@ -791,7 +791,7 @@ body{
 			position: absolute;
 
 			&:checked+label{
-				color: $dark-grey;
+				color: $orange;
 				font-size: $main-size;
 				border-bottom: 3px solid $orange;
 			}
@@ -809,6 +809,7 @@ body{
 			border-bottom: 3px solid $border-grey;
 			-webkit-box-sizing: border-box;
 			        box-sizing: border-box;
+			 font-weight: 700;
 			
 
 			&:hover{
