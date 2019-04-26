@@ -1035,7 +1035,7 @@ body {
   position: absolute;
 }
 .tabs__wrapper input:checked + label {
-  color: #464646;
+  color: #F68633;
   font-size: 16px;
   border-bottom: 3px solid #F68633;
 }
@@ -1049,6 +1049,7 @@ body {
   border-bottom: 3px solid #F4F4F4;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-weight: 700;
 }
 .tabs__wrapper label:hover {
   border-bottom: 3px solid #F68633;
@@ -1633,6 +1634,9 @@ body {
     width: 100%;
   }
 
+  .tabs__wrapper label {
+    padding: 15px 20px;
+  }
   .tabs .tab2__content .content__item {
     width: 48%;
     padding-right: 10px;
