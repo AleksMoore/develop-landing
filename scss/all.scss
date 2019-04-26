@@ -25,6 +25,15 @@ body{
 	font-family: $main-font;
 	height: 100%;
 	min-height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 /* Button */
@@ -122,6 +131,10 @@ body{
 			text-decoration: none;
 			border-bottom: 1px solid $orange;
 		}
+	}
+
+	&__callback-mobile{
+		display: none;
 	}
 }
 
@@ -314,7 +327,7 @@ body{
 		p{
 			color: $dark-grey;
 			font-size: $main-size;
-			margin: 0 0 27px;
+			line-height: 27px;
 		}
 	}
 }
@@ -769,7 +782,7 @@ body{
 	background: $back-grey;
 
 	&__wrapper{
-		width: 66%;
+		width: 100%;
     	max-width: 940px;
 
     	/* Чекбоксы */
@@ -784,16 +797,18 @@ body{
 			}
 		}
 		
-		/* Когда 3 таба то width: 21%; */
+		/* Когда 3 таба то width: 33%; */
 
 		label{
 			display: inline-block;
 			margin: 0 -4px -1px 0;
-    		width: 37%;
+    		width: 50%;
 			padding: 15px 57px;
 			text-align: center;
 			color: $dark-grey;
 			border-bottom: 3px solid $border-grey;
+			-webkit-box-sizing: border-box;
+			        box-sizing: border-box;
 			
 
 			&:hover{
@@ -1112,3 +1127,5 @@ body{
 }
 
 /* End Popup */
+
+@import "mobile";
